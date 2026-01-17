@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5TXFBVMX');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PQ439V324"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1PQ439V324');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- PRIMARY SEO DATA -->
+    <title>The Self Quiz – Ultimate Study Tool & Quiz Generator for All Students</title>
+    <meta name="description" content="Transform your notes into interactive quizzes instantly. The Self Quiz is the ultimate active recall tool for students of all fields—Engineering, Arts, Business, and Medicine. Create custom tests or access curated MBBS resources by Muneeb ur Rahman.">
+    <meta name="keywords" content="Quiz Generator, Study Tool, Create MCQs, Active Recall, Exam Preparation, Flashcards Alternative, Student Resources, General Knowledge, University Exams, High School Study, MBBS Study Tool, Medical MCQs, Dr Muneeb, Muneeb ur Rahman">
+    <meta name="author" content="Muneeb ur Rahman">
+    <meta name="robots" content="index, follow"> 
+    <meta name="theme-color" content="#0f172a"> 
+    
+    <!-- CANONICAL TAG -->
+    <link rel="canonical" href="https://theselfquiz.com/">
+
+    <!-- OPEN GRAPH / FACEBOOK / LINKEDIN -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="The Self Quiz">
+    <meta property="og:url" content="https://theselfquiz.com/"> 
+    <meta property="og:title" content="The Self Quiz – Ultimate Study Tool for All Students">
+    <meta property="og:description" content="Make learning easier, no matter your field. Generate custom quizzes from your notes instantly or access specialized medical resources. Study smarter, not harder.">
+    <meta property="og:image" content="https://theselfquiz.com/images/logo.png"> 
+    
+    <!-- TWITTER CARD -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://theselfquiz.com/">
+    <meta property="twitter:title" content="The Self Quiz – Create Quizzes from Any Notes">
+    <meta property="twitter:description" content="The ultimate study companion for every student. Generate MCQs from your text or study high-yield medical notes.">
+    <meta property="twitter:image" content="https://theselfquiz.com/images/logo.png">
+
+    <!-- SCHEMA MARKUP (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "The Self Quiz",
+          "url": "https://theselfquiz.com/",
+          "description": "The ultimate tool for students of any discipline to practice MCQs, generate quizzes from text, and access study resources.",
+          "author": {
+            "@id": "https://theselfquiz.com/#person"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://theselfquiz.com/#person",
+          "name": "Muneeb ur Rahman",
+          "alternateName": "Dr. Muneeb",
+          "jobTitle": "Student & Educator",
+          "url": "https://theselfquiz.com/",
+          "image": "https://theselfquiz.com/images/logo.png",
+          "description": "I’m Muneeb ur Rahman, a student with a mission to make learning easier, faster, and accessible for everyone. I created The Self Quiz to help students of all fields generate their own practice tests, while also curating specific resources for medical students.",
+          "sameAs": [
+            "https://www.instagram.com/dr.muneeb.official",
+            "https://www.youtube.com/channel/UCiF2IsZVsJr4As9W0TBWBYg",
+            "mailto:dr.muneeb.official@gmail.com"
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="./styles.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ==========================================================================
+           CUSTOM CSS
+           ========================================================================== */
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; 
+            overflow-x: hidden;
+        }
+
+        /* Hero Background */
+        #hero {
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+            position: relative;
+        }
+
+        /* Float Animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Button Shine */
+        .btn-shine {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-shine::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-25deg);
+            transition: left 0.5s ease-in-out;
+        }
+        .btn-shine:hover::after {
+            left: 200%;
+            transition: left 0.7s ease-in-out;
+        }
+
+        /* Scroll Reveal */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);
+            will-change: opacity, transform;
+        }
+        .is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+
+        /* Bounce Arrow */
+        .scroll-down-arrow {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            z-index: 20;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-15px); }
+            60% { transform: translateX(-50%) translateY(-7px); }
+        }
+
+        /* 3D Tilt Cards */
+        .tilt-card {
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+            transition: transform 0.1s ease-out;
+        }
+        .tilt-card-inner {
+            transform: translateZ(20px);
+        }
+
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+        /* ==========================================================================
+           TOP NOTIFICATION BAR STYLES
+           ========================================================================== */
+        
+        #top-notification-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            
+            /* Sleek Dark Background with slight transparency for glass effect */
+            background: rgba(15, 23, 42, 0.95); 
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            
+            /* Hidden initially for slide animation */
+            transform: translateY(-100%);
+            transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        #top-notification-bar.slide-down {
+            transform: translateY(0);
+        }
+
+        .notification-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .notification-text {
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            text-align: center;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            /* Subtle text shadow for elegance */
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .notification-close-btn {
+            position: absolute;
+            right: 20px;
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+            font-size: 1.25rem;
+            padding: 4px;
+            line-height: 1;
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+        }
+
+        .notification-close-btn:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(1.1);
+        }
+
+        /* Responsive spacing for mobile */
+        @media (max-width: 640px) {
+            .notification-content {
+                padding: 10px 40px 10px 15px; /* Extra right padding for close button */
+                justify-content: flex-start;
+            }
+            .notification-text {
+                text-align: left;
+                font-size: 0.85rem;
+            }
+            .notification-close-btn {
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-gray-100 antialiased selection:bg-emerald-500 selection:text-white">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TXFBVMX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- TOP NOTIFICATION BAR -->
+    <div id="top-notification-bar">
+        <div class="notification-content">
+            <p class="notification-text">Built with the hope that she notices.</p>
+            <button id="close-notification" class="notification-close-btn" aria-label="Close notification">
+                &times;
+            </button>
+        </div>
+    </div>
+    <!-- END TOP NOTIFICATION BAR -->
+
+    <section id="hero" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <canvas id="particles-canvas" class="absolute inset-0 w-full h-full z-0 opacity-40"></canvas>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-slate-900 z-0 pointer-events-none"></div>
+
+        <div class="relative z-10 flex flex-col justify-center items-center text-center px-5 md:px-10 py-16 w-full max-w-7xl mx-auto">
+            
+            <div class="mb-8 animate-float reveal-on-scroll">
+                <img 
+                    src="images/logo.png" 
+                    onerror="this.src='https://placehold.co/150x150/10b981/FFF?text=TSQ'"
+                    alt="The Self Quiz Logo" 
+                    class="w-28 h-28 sm:w-40 sm:h-40 rounded-full shadow-[0_0_30px_rgba(16,185,129,0.3)] border-4 border-slate-800/50 backdrop-blur-sm"
+                />
+            </div>
+            
+            <h1 class="reveal-on-scroll delay-100 text-5xl sm:text-6xl md:text-8xl font-extrabold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-blue-400 leading-tight drop-shadow-2xl">
+                THE SELF QUIZ
+            </h1>
+
+            <h2 class="reveal-on-scroll delay-200 text-2xl md:text-3xl font-medium mb-8 text-slate-300 drop-shadow-lg tracking-wide">
+                Study smarter, not harder!
+            </h2>
+
+            <p class="reveal-on-scroll delay-300 text-lg md:text-xl max-w-2xl mb-12 text-slate-400 leading-relaxed drop-shadow">
+                Your ultimate study tool. <strong class="text-emerald-400 font-semibold">Create</strong> custom quizzes from your own notes or <strong class="text-blue-400 font-semibold">take</strong> our pre-made quizzes, all with detailed explanations and performance analysis.
+            </p>
+
+            <div class="reveal-on-scroll delay-300 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 w-full justify-center px-4">
+                <a href="CYOQ.html" class="btn-shine relative group py-4 px-10 bg-emerald-600 text-white font-bold text-lg no-underline rounded-full shadow-[0_10px_20px_-10px_rgba(16,185,129,0.5)] hover:shadow-[0_20px_30px_-10px_rgba(16,185,129,0.6)] focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-4 focus:ring-offset-slate-900 transition-all duration-300 ease-in-out hover:bg-emerald-500 transform hover:-translate-y-1 hover:scale-105">
+                    <span class="relative z-10 flex items-center justify-center gap-2">
+                        Create Your Own Quiz
+                        <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                    </span>
+                </a>
+
+                <a href="quiz-menu.html" class="btn-shine relative group py-4 px-10 bg-slate-700 text-white font-bold text-lg no-underline rounded-full shadow-lg hover:shadow-xl hover:bg-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-4 focus:ring-offset-slate-900 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-slate-600">
+                    <span class="relative z-10">Start Pre-made Quiz</span>
+                </a>
+            </div>
+        </div>
+
+        <a href="#paths" class="scroll-down-arrow opacity-80 hover:opacity-100 transition-opacity" aria-label="Scroll down">
+            <svg class="w-8 h-8 text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5" />
+              <path stroke-linecap="round" stroke-linejoin="round"d="M19.5 12l-7.5 7.5-7.5-7.5" />
+            </svg>
+        </a>
+    </section>
+
+    <section id="paths" class="bg-slate-900 text-gray-100 py-24 px-6 relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="reveal-on-scroll text-4xl md:text-5xl font-bold text-center text-white mb-16 tracking-tight">Choose Your Path to Mastery</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 perspective-container">
+                <div class="tilt-card reveal-on-scroll delay-100 glass-panel p-1 rounded-3xl">
+                    <div class="tilt-card-inner bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-[1.3rem] h-full border border-slate-700/50 hover:border-emerald-500/50 transition-colors duration-500">
+                        <div class="flex items-center mb-6">
+                            <div class="p-3 bg-emerald-500/10 rounded-xl mr-4 border border-emerald-500/20">
+                                <svg class="w-8 h-8 text-emerald-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-2xl text-emerald-100">Create Your Own Quiz</h3>
+                        </div>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            Transform your notes into powerful study tools. Paste your questions, answers, and explanations to instantly generate a custom quiz tailored to your learning needs.
+                        </p>
+                        <ul class="list-none space-y-3 text-sm text-slate-300">
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Seamlessly import content</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Full control over duration</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Perfect for deep dives</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tilt-card reveal-on-scroll delay-200 glass-panel p-1 rounded-3xl">
+                    <div class="tilt-card-inner bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-[1.3rem] h-full border border-slate-700/50 hover:border-blue-500/50 transition-colors duration-500">
+                        <div class="flex items-center mb-6">
+                            <div class="p-3 bg-blue-500/10 rounded-xl mr-4 border border-blue-500/20">
+                                <svg class="w-8 h-8 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h7.5M8.25 12h7.5m-7.5 5.25h7.5M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-2xl text-blue-100">Start Pre-made Quiz</h3>
+                        </div>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            Dive into a curated collection of high-yield quizzes. Explore categorized modules, test your knowledge, and track your progress through expertly designed questions.
+                        </p>
+                        <ul class="list-none space-y-3 text-sm text-slate-300">
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Organized by subject</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Detailed explanations</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Performance analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- REMOVED KEYWORDS / TOPICS SECTION -->
+        </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section class="py-12 px-6 relative z-10 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-16 reveal-on-scroll">Why Students Trust Us</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Review 1: Arqam -->
+                <div class="bg-slate-800/40 backdrop-blur-md p-6 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors reveal-on-scroll delay-100">
+                    <div class="flex text-emerald-400 mb-3">★★★★★</div>
+                    <p class="text-slate-300 mb-4 text-sm italic">"Finally, a tool that lets me digitize my book MCQs. I just paste them here, and it turns them into a real exam mode. Great for active recall."</p>
+                    <div class="flex items-center mt-auto">
+                        <div class="w-8 h-8 bg-slate-700 rounded-full flex items-center justify-center font-bold text-emerald-400 text-sm">A</div>
+                        <div class="ml-3">
+                            <p class="text-white font-medium text-sm">Arqam Tahir</p>
+                            <p class="text-[10px] text-slate-500 uppercase tracking-wide">2nd Year MBBS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2: Zumer -->
+                <div class="bg-slate-800/40 backdrop-blur-md p-6 rounded-2xl border border-slate-700 hover:border-blue-500/50 transition-colors reveal-on-scroll delay-200">
+                    <div class="flex text-blue-400 mb-3">★★★★★</div>
+                    <p class="text-slate-300 mb-4 text-sm italic">"The pre-made quizzes might be selective, but they are pure gold. They cover the exact high-yield topics I needed for my modular assessment."</p>
+                    <div class="flex items-center mt-auto">
+                        <div class="w-8 h-8 bg-slate-700 rounded-full flex items-center justify-center font-bold text-blue-400 text-sm">Z</div>
+                        <div class="ml-3">
+                            <p class="text-white font-medium text-sm">Zumer</p>
+                            <p class="text-[10px] text-slate-500 uppercase tracking-wide">Final Year Med</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3: Abid Ali -->
+                <div class="bg-slate-800/40 backdrop-blur-md p-6 rounded-2xl border border-slate-700 hover:border-purple-500/50 transition-colors reveal-on-scroll delay-300">
+                    <div class="flex text-purple-400 mb-3">★★★★★</div>
+                    <p class="text-slate-300 mb-4 text-sm italic">"Simple, fast, and no distractions. I use it to simulate exam pressure using my own question bank. Highly recommended."</p>
+                    <div class="flex items-center mt-auto">
+                        <div class="w-8 h-8 bg-slate-700 rounded-full flex items-center justify-center font-bold text-purple-400 text-sm">A</div>
+                        <div class="ml-3">
+                            <p class="text-white font-medium text-sm">Abid Ali</p>
+                            <p class="text-[10px] text-slate-500 uppercase tracking-wide">House Officer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4: M. Amin -->
+                <div class="bg-slate-800/40 backdrop-blur-md p-6 rounded-2xl border border-slate-700 hover:border-teal-500/50 transition-colors reveal-on-scroll delay-300">
+                    <div class="flex text-teal-400 mb-3">★★★★★</div>
+                    <p class="text-slate-300 mb-4 text-sm italic">"Dr. Muneeb's resources are always to the point. It helps me verify my answers instantly without flipping pages in the book."</p>
+                    <div class="flex items-center mt-auto">
+                        <div class="w-8 h-8 bg-slate-700 rounded-full flex items-center justify-center font-bold text-teal-400 text-sm">M</div>
+                        <div class="ml-3">
+                            <p class="text-white font-medium text-sm">M. Amin</p>
+                            <p class="text-[10px] text-slate-500 uppercase tracking-wide">3rd Year MBBS</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="bg-slate-900 py-24 px-6 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12 reveal-on-scroll">Frequently Asked Questions</h2>
+            
+            <div class="space-y-6 reveal-on-scroll" itemscope itemtype="https://schema.org/FAQPage">
+                
+                <!-- Q1 -->
+                <div class="bg-slate-800/50 rounded-2xl p-6 border border-slate-700" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="text-xl font-semibold text-emerald-400 mb-3" itemprop="name">How does the "Create Your Own Quiz" feature work?</h3>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p class="text-slate-300 leading-relaxed" itemprop="text">
+                            It transforms your text into an interactive test. Simply paste your existing MCQs (questions, options, and answers) into the box, and our tool organizes them into a clickable quiz format so you can practice in a real exam environment.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="bg-slate-800/50 rounded-2xl p-6 border border-slate-700" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="text-xl font-semibold text-emerald-400 mb-3" itemprop="name">Is this tool helpful for MBBS Professionals?</h3>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p class="text-slate-300 leading-relaxed" itemprop="text">
+                            Yes. It is designed specifically for medical students to practice active recall. Whether you are preparing for Modular exams, Send-ups, or your Annual Profs, solving questions here helps retain information better than passive reading.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="bg-slate-800/50 rounded-2xl p-6 border border-slate-700" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="text-xl font-semibold text-emerald-400 mb-3" itemprop="name">Who creates the pre-made medical quizzes?</h3>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p class="text-slate-300 leading-relaxed" itemprop="text">
+                            The quizzes are curated by Muneeb ur Rahman (Dr. Muneeb). While the collection is growing, every single question is hand-picked from standard textbooks like Gray's Anatomy and Guyton to ensure it is high-yield and exam-relevant.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="bg-gradient-to-b from-slate-900 to-slate-950 text-slate-300 py-24 px-6 reveal-on-scroll">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-white mb-10">About the Creator</h2>
+            <div class="relative inline-block mb-10 group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-blue-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                <img src="images/Muneeb-index.png" alt="Muneeb ur Rahman" class="relative rounded-full w-36 h-36 object-cover border-4 border-slate-800 shadow-2xl transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute bottom-2 right-2 block h-5 w-5 rounded-full bg-emerald-500 ring-4 ring-slate-900 animate-pulse"></span>
+            </div>
+            
+            <p class="text-xl max-w-3xl mx-auto mb-6 leading-relaxed font-light text-slate-200"> 
+                I’m <span class="text-emerald-400 font-semibold">Muneeb ur Rahman</span>, an MBBS student with a simple mission: make medical learning easier, faster, and more accessible for every student who needs it. I create and curate organised study resources—MCQs, notes, books, and high-yield summaries—and share them freely so no one has to struggle alone.
+            </p>
+            
+            <p class="text-lg max-w-3xl mx-auto mb-6 text-slate-400 leading-relaxed">
+                Over time, I’ve built a collection that brings together the best medical content in one place: Osmosis notes, Ninja Nerd resources, Dr. Najeeb notes, subject books, and topic-wise MCQs that I prepare and refine myself. My goal is to turn overwhelming medical content into clean, understandable, exam-ready material.
+            </p>
+
+            <p class="text-lg max-w-3xl mx-auto mb-12 text-slate-400 leading-relaxed italic">
+                "I’ve always been driven by curiosity, technology, and problem-solving. At heart, I believe learning medicine is a collective journey. If my work makes that path even slightly easier for someone else, the effort is worth it."
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-lg font-medium">
+                <a href="Founder.html" class="flex items-center px-6 py-3 rounded-xl bg-emerald-600 text-white hover:bg-emerald-500 hover:scale-105 shadow-[0_0_15px_rgba(16,185,129,0.4)] transition-all duration-300 group">
+                    <svg class="w-6 h-6 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                    </svg>
+                    Founder Profile
+                </a>
+
+                <a href="mailto:dr.muneeb.official@gmail.com" class="flex items-center px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 hover:text-emerald-400 transition-all duration-300 group">
+                    <svg class="w-6 h-6 mr-3 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg> Email
+                </a>
+                <a href="https://www.instagram.com/dr.muneeb.official" target="_blank" class="flex items-center px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 hover:text-blue-400 transition-all duration-300 group">
+                    <svg class="w-6 h-6 mr-3 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01" /></svg> Instagram
+                </a>
+                <a href="https://www.youtube.com/channel/UCiF2IsZVsJr4As9W0TBWBYg" target="_blank" class="flex items-center px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 hover:text-red-500 transition-all duration-300 group">
+                    <svg class="w-6 h-6 mr-3 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a2.25 2.25 0 00-2.25-2.25H4.5a2.25 2.25 0 00-2.25 2.25v10.5a2.25 2.25 0 002.25 2.25h15a2.25 2.25 0 002.25-2.25V6.75z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9 15.75l6-3.75-6-3.75v7.5z" /></svg> YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 pb-8 pt-6 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="pt-8 text-center text-slate-600 text-sm">
+                <p>&copy; 2025 The Self Quiz. All rights reserved.</p>
+                <p class="mt-2">Crafted by Muneeb ur Rahman, MBBS student & medical learner</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // --- TOP NOTIFICATION BAR LOGIC ---
+            const notificationBar = document.getElementById('top-notification-bar');
+            const closeNotificationBtn = document.getElementById('close-notification');
+
+            if (notificationBar && closeNotificationBtn) {
+                // Delay animation slightly for better UX
+                setTimeout(() => {
+                    notificationBar.classList.add('slide-down');
+                }, 800);
+
+                closeNotificationBtn.addEventListener('click', () => {
+                    notificationBar.classList.remove('slide-down');
+                    // Optional: Remove from DOM after transition if desired
+                    // setTimeout(() => notificationBar.remove(), 600);
+                });
+            }
+
+            // --- EXISTING ANIMATION LOGIC ---
+            // Scroll Animation
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+            // Scroll Arrow
+            document.querySelector('.scroll-down-arrow').addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelector('#paths').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            // 3D Tilt
+            const cards = document.querySelectorAll('.tilt-card');
+            cards.forEach(card => {
+                card.addEventListener('mousemove', function(e) {
+                    const rect = this.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const rotateX = ((y - rect.height/2) / (rect.height/2)) * -5;
+                    const rotateY = ((x - rect.width/2) / (rect.width/2)) * 5;
+                    this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg)`;
+                });
+            });
+
+            // Particles
+            const canvas = document.getElementById('particles-canvas');
+            const ctx = canvas.getContext('2d');
+            let particlesArray;
+            function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+            window.addEventListener('resize', () => { resizeCanvas(); initParticles(); });
+            resizeCanvas();
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.dx = (Math.random() * 0.4) - 0.2;
+                    this.dy = (Math.random() * 0.4) - 0.2;
+                    this.size = Math.random() * 2 + 1;
+                }
+                update() {
+                    if (this.x > canvas.width || this.x < 0) this.dx = -this.dx;
+                    if (this.y > canvas.height || this.y < 0) this.dy = -this.dy;
+                    this.x += this.dx;
+                    this.y += this.dy;
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fillStyle = '#34d399';
+                    ctx.globalAlpha = 0.5;
+                    ctx.fill();
+                }
+            }
+
+            function initParticles() {
+                particlesArray = [];
+                let count = (canvas.width * canvas.height) / 15000;
+                for (let i = 0; i < count; i++) particlesArray.push(new Particle());
+            }
+
+            function animateParticles() {
+                requestAnimationFrame(animateParticles);
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < particlesArray.length; i++) {
+                    particlesArray[i].update();
+                }
+                // Connections
+                for (let a = 0; a < particlesArray.length; a++) {
+                    for (let b = a; b < particlesArray.length; b++) {
+                        let dx = particlesArray[a].x - particlesArray[b].x;
+                        let dy = particlesArray[a].y - particlesArray[b].y;
+                        let dist = dx*dx + dy*dy;
+                        if (dist < (canvas.width/7) * (canvas.height/7)) {
+                            ctx.strokeStyle = `rgba(52, 211, 153, ${1 - dist/20000})`;
+                            ctx.lineWidth = 1;
+                            ctx.beginPath();
+                            ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                            ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+            }
+            initParticles();
+            animateParticles();
+        });
+    </script>
+</body>
+</html>
